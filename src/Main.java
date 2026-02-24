@@ -27,4 +27,21 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
+    // Задача 3
+    public static int calculateDeliveryDays(int distance) {
+        int deliveryDays = 1;
+
+        if (distance > 20) {
+            deliveryDays++;
+        }
+        if (distance > 60) {
+            deliveryDays++;
+        }
+
+        if (distance > 100) {
+            return -1;
+        }
+
+        return deliveryDays;
+    }
 }
